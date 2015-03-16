@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/index.min.css">
+        <link rel="stylesheet" href="css/styles.min.css">
+    </head>
+    
+    <body>
+        <div class="cover">
+            <div class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+                        <a class="navbar-brand" href="#"><span><img src="images/White_on_black_background_186x75.png" class="img-responsive"></span></a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                          <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <a href="index.html"><i class="fa fa-home"></i>Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="contact.html"><i class="fa fa-fw fa-search"></i>Contacts</a>
+                            </li>
+                            <li>
+                                <a href="Blog.html"><i class="fa fa-comments-o fa-fw"></i>Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cover-image" style="background-image : url('images/Dance_floor_2_by_harmon.jpg')"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="text-muted">Show this</h1>
+                        <p>and contact me.</p>
+                        <br>
+                        <br>
+                        <a class="btn btn-lg btn-default click">Watch Me<i class="fa fa-fw fa-lg fa-long-arrow-down text-primary"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <h2 class="find text-inverse">Find us</h2>
+                        <address>
+                            <strong>COS Nanteau</strong>
+                            <br>2 Rue des Arches
+                            <br>77710 Nanteau-sur-Lunain
+                            <br>
+                        </address>
+                    </div>
+                    <div class="col-md-6 form">
+                        <form class="text-left">
+                            <div class="form-group">
+                                <label for="exampleInputName2">Name</label>
+                                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                placeholder="Enter email">
+                                
+                            </div>
+                            
+                            <textarea class="form-control" placeholder="Your Message" rows="3"></textarea>
+                            
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container-fluid"></div>
+        </div>
+        <div class="section social">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-xs-3 text-center">
+                        <i class="fa fa-5x fa-fw fa-instagram text-inverse"></i>
+                    </div>
+                    <div class="col-xs-3">
+                        <i class="fa fa-5x fa-fw fa-twitter text-inverse"></i>
+                    </div>
+                    <div class="col-xs-3">
+                        <i class="fa fa-5x fa-facebook fa-fw text-inverse"></i>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <i class="fa fa-5x fa-fw fa-github text-inverse"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section foot">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <h3 class="text-inverse">About</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+<!--                        <a class="copyright" href="#">Last Night, Inc; All rights reserved.</a>-->
+                        <a href="#" class="top fa fa-3x pull-right fa-chevron-up"></a>
+                        <div class="col-md-12">
+                            <ul class="media-list">
+                                <li class="media">
+                                    <a class="pull-left" href="#"><img class="media-object" src="https://i.creativecommons.org/l/by-nc-sa/2.0/fr/88x31.png"></a>
+                                    <div class="media-body">
+                                        <p>Ce(tte) œuvre est mise à disposition selon les termes de la
+                                            <a rel="license"
+                                            href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 2.0 France</a>.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $('.click').click(function(){
+                          $("html, body").animate({ scrollTop: $('.find').offset().top }, 1000);
+                          });
+                                 $('.top').click(function(){
+                                      $("html, body").animate({ scrollTop: $('.navbar-header').offset().top }, 1000);
+                                      });
+            </script>
+            <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60729908-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+        </div>
+    </body>
+
+</html>
